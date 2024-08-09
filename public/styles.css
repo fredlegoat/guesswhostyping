@@ -1,0 +1,119 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fond sombre pour le mode sombre */
+    color: #fff; /* Couleur du texte */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur de fond */
+  }
+  
+  .container {
+    background-color: #333; /* Fond du conteneur */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur de fond */
+    max-width: 600px; /* Limiter la largeur du conteneur pour éviter une trop grande extension sur de grands écrans */
+    margin: 0 auto; /* Centrer le conteneur */
+  }
+  
+  h2 {
+    color: #4caf50; /* Vert pour le titre */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur du titre */
+  }
+  
+  p {
+    color: #bbb; /* Gris clair pour le texte */
+  }
+  
+  input {
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #333; /* Couleur du texte dans l'input */
+    background-color: #fff; /* Fond de l'input */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transitions pour le changement de couleur de fond et de texte */
+    width: 100%; /* Largeur maximale pour s'adapter à la largeur du conteneur parent */
+    box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur totale */
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur du bouton */
+    width: 100%; /* Largeur maximale pour s'adapter à la largeur du conteneur parent */
+    box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur totale */
+    margin-top: 10px; /* Espacement par rapport aux éléments supérieurs */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #playerList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #playerList li {
+    margin: 5px;
+    padding: 8px;
+    background-color: #555; /* Fond des éléments de la liste */
+    border-radius: 4px;
+    color: #fff; /* Couleur du texte dans la liste */
+    transition: background-color 0.3s ease; /* Transition pour le changement de couleur de fond */
+  }
+  
+  #playerCount {
+    color: #ff9800; /* Orange pour le compteur */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur du compteur */
+  }
+  
+  /* Ajout de règles de média requêtes pour des tailles d'écran spécifiques */
+  
+  @media only screen and (max-width: 600px) {
+    /* Styles spécifiques pour les écrans de 600 pixels de large et moins */
+    .container {
+      padding: 10px;
+    }
+  
+    input,
+    button {
+      margin-top: 5px;
+    }
+  }
+  
+
+  #chatList {
+    list-style: none;
+    padding: 0;
+    width: 500px;
+    max-height: 500px; /* Ajustez la hauteur maximale selon vos préférences */
+    overflow-y: auto; /* Ajouter une barre de défilement vertical si le contenu dépasse la hauteur maximale */
+  }
+  
+  #chatList li {
+    margin: 5px;
+    padding: 8px;
+    background-color: #555;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    text-align: left; /* Aligner le texte à droite */
+  }
+  
+
+ 
+  

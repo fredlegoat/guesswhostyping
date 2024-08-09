@@ -1,0 +1,31 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Who's Typing - Jeu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="game">
+    <h2>Guess Who's Typing</h2>
+    <div>
+      <p>Chat :</p>
+      <ul id="chatList"></ul>
+      <input type="text" id="messageInput" placeholder="Entrez votre message">
+      <button onclick="sendMessage()">Envoyer</button>
+    </div>
+    <div id="mysteryPlayerSection">
+      <p>Le joueur à imité est :</p>
+      <span id="mysteryPlayer"></span>
+    </div>
+    <div>
+      <p>Timer :</p>
+      <div id="timer">10:00</div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

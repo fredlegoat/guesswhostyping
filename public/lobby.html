@@ -1,0 +1,25 @@
+<!-- lobby.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lobby - Guess Who's Typing</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Inclure la bibliothèque Socket.IO -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <!-- Inclure le script lobby.js -->
+  <script src="lobby.js"></script>
+</head>
+<body>
+  <div class="container" id="lobby">
+    <h2>Bienvenue dans Guess Who's Typing !</h2>
+    <h3>Liste des joueurs (<span id="playerCount">0</span>/10) :</h3>
+    <ul id="playerList">
+      <!-- Liste des joueurs ici -->
+    </ul>
+    <button onclick="startGame()">Lancer la partie</button>
+    <button onclick="leaveLobby()">Quitter le lobby</button>
+  </div>
+</body>
+</html>

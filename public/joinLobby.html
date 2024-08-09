@@ -1,0 +1,20 @@
+<!-- joinLobby.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejoindre le Lobby - Guess Who's Typing</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script src="joinLobby.js"></script>
+</head>
+<body>
+  <div class="container" id="joinLobby">
+    <h2>Bienvenue dans Guess Who's Typing !</h2>
+    <p>Rejoignez le lobby en entrant votre nom :</p>
+    <input type="text" id="playerName" placeholder="Votre nom">
+    <button onclick="joinLobby()">Rejoindre le lobby</button>
+  </div>
+</body>
+</html>
